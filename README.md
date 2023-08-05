@@ -66,7 +66,9 @@ Sau đây là các bước cơ bản để có thể cài đặt và vận hành
    1. Clone bằng Git
       1. Chuột phải ở folder cần cài đặt source code nhấn vào git bash
       2. Nhập:
+         ```sh
          git clone https://github.com/ElainaPr0ject/Elaina.git
+         ```
       
     3. Download trên Github
        1. Truy cập vào [Project](https://github.com/ElainaPr0ject/Elaina)
@@ -77,7 +79,9 @@ Sau đây là các bước cơ bản để có thể cài đặt và vận hành
 3. Cài đặt các package cần thiết
     1. Mở cmd/terminal ở thư mục bot, LƯU Ý thư mục đó phải có file package.json
     2. Nhập:
+   ```sh
     npm install
+   ```
 
 4. Chỉnh sửa file config
     1. Mở file .env bằng 1 Text Editor
@@ -100,28 +104,34 @@ Sau đây là các bước cơ bản để có thể cài đặt và vận hành
 #### Linux/ubuntu
 
 1. Cài đặt node và git bằng cách nhập vào terminal
+   ```sh
     sudo apt-get install curl
     curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
     sudo apt-get install nodejs git sqlite3 -y
     sudo npm install -g npm
+   ```
 
-2. Clone source code của bot bằng cách nhập vào terminal
+3. Clone source code của bot bằng cách nhập vào terminal
+   ```sh
     git clone https://github.com/ElainaPr0ject/Elaina.git
+   ```
 
-3. Cài đặt các package cần thiết
+5. Cài đặt các package cần thiết
     1. Mở cmd/terminal ở thư mục bot, LƯU Ý thư mục đó phải có file package.json
     2. Nhập
+   ```sh
     npm install
+   ```
 
-4. Chỉnh sửa file config
+7. Chỉnh sửa file config
     1. Mở file .env bằng 1 Text Editor
     2. Tùy chỉnh BOTNAME, PREFIX, API_KEY, ...
     3. Sao lưu và đóng lại
 
-5. Lấy appstate
+8. Lấy appstate
     - Bạn có thể lấy fbstate bằng [c3c-fbstate](https://github.com/c3cbot/c3c-fbstate), nhưng cần đổi tên lại thành appstate.json
     
-6. Chạy bot và tận hưởng
+9. Chạy bot và tận hưởng
     1. Nhập:
        1. Đối với Java
           Xem hướng dẫn tại đây
