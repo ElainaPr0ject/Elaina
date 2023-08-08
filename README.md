@@ -33,10 +33,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Introduce
-<p><strong>ELAINAPR0JECT LÀ GÌ?</strong></p>
+<p><strong>WHAT IS ELAINAPR0JECT?</strong></p>
 <br />
-<p>
-<strong>ElainaPr0ject</strong> là một dự án Messenger mang đến cho người 1 trải nghiệm thú vị, mới mẻ. Dự án này được được tạo chủ yếu hỗ trợ cho Group Messenger và được phát triển bởi <strong>Zeew</strong> (Tất nhiên rồi, bạn cũng có thể là 1 người phát triển của nó!).
+<p><strong>ElainaPr0ject</strong> is a Messenger project that gives people an interesting and new experience. This project was created mainly in support of Group Messenger and developed by <strong>Zeew</strong> (Of course, you can also be one of its developers!).
 </p>
 
 
@@ -44,115 +43,66 @@
 <!-- INSTALLATION -->
 ## Installation
 
-Sau đây là các bước cơ bản để có thể cài đặt và vận hành.
+Following are the basic steps to be able to install and operate.
 
-### Yêu cầu
+### Require
 
-- Dung lượng của máy phải trống tầm 1-2gb.
-- Một phần mềm Text Editor.
-- Cần hiểu cơ bản về Nodejs và Javascript.
-- Một tài khoản Facebook dùng để làm bot (Vì project sử dụng 1 API bên thứ 3 nên nó có thể khiến cho tài khoản Facebook của bạn bị khóa bất cứ lúc nào).
-- Cần cài Nodejs, Git - Không cần thiết (và JRE hoặc JDK dành cho phiên bản Java).
+- The capacity of the device must be about 200Mb free.
+- A Text Editor software.
+- Basic understanding of Nodejs and Javascript is required.
+- Facebook account for bots (Because the project uses 3rd party APIs, your Facebook account can be locked at any time).
+- Need to install Nodejs, Git - (Not necessary).
 
-### Cài Đặt
+### Install
 
 #### Windows
 
-1. Tải về [Nodejs](https://nodejs.org/en/) sau đó cài đặt
-    1. Nếu bạn window 7 trở xuống và không thể cài đặt nodejs thì có thể tải file cài đặt nodejs-13 [tại đây](https://nodejs.org/download/release/v13.14.0/) nhưng phiên bản nodejs-13 có thể không tương thích với project nên bạn có thể cài bản [Binary 
-](https://nodejs.org/en/download) (Không ổn định)
+1. Download [Nodejs](https://nodejs.org/en/) then install.
+    1. If you win 7 or below can't install nodejs, you can download the nodejs-13 installation file [here](https://nodejs.org/download/release/v13.14.0/) but nodejs version -13 may not be compatible with the project so you can install [Binary
+](https://nodejs.org/en/download) (Unstable)
 
-2. Download source code của bot
-   1. Clone bằng Git
-      1. Chuột phải ở folder cần cài đặt source code nhấn vào git bash
-      2. Nhập:
+2. Download the bot's source code
+   1. Clone with Git
+      1. Right click on the source code installation folder and click on git bash
+      2. Enter:
          ```sh
          git clone https://github.com/ElainaPr0ject/Elaina.git
          ```
       
-    3. Download trên Github
-       1. Truy cập vào [Project](https://github.com/ElainaPr0ject/Elaina)
-       2. Chọn vào phần <> Code
-       3. Chọn Download Zip
-       4. Giải nén file vừa tải vào folder cần cài đặt
+    3. Download on Github
+       1. Access to [Project](https://github.com/ElainaPr0ject/Elaina)
+       2. Click on the `<> Code`
+       3. Press Download Zip
+       4. Extract the downloaded file into the installation directory
 
-3. Cài đặt các package cần thiết
-    1. Mở cmd/terminal ở thư mục bot, LƯU Ý thư mục đó phải có file package.json
-    2. Nhập:
+3. Install the necessary packages
+    1. Open Terminal in the bot folder, NOTE that folder must have package.json
+    2. Enter:
    ```sh
     npm install
    ```
 
-4. Chỉnh sửa file config
-    1. Mở file .env bằng 1 Text Editor
-    2. Tùy chỉnh BOTNAME, PREFIX, API_KEY, ...
-    3. Sao lưu và đóng lại
-
-5. Lấy appstate
-    - Bạn có thể lấy fbstate bằng [c3c-fbstate](https://github.com/c3cbot/c3c-fbstate), nhưng cần đổi tên lại thành appstate.json
+4. Edit config file
+    1. Open .env file with Text Editor
+    2. Customize BOTNAME, PREFIX, API_KEY, ...
+    3. Save and close
+5. Get Appstate
+    - You can get fbstate with [c3c-fbstate](https://github.com/c3cbot/c3c-fbstate), but need to rename it back to appstate.json
       
-6. Chạy bot và tận hưởng
-    1. Nhập:
-       1. Đối với Java
-          Xem hướng dẫn tại đây
-       3. Đối với Nodejs
-          npm start
-          hoặc
-          node .
-    2. Đợi source code load file và tận hưởng!
-
-#### Linux/ubuntu
-
-1. Cài đặt node và git bằng cách nhập vào terminal
-   ```sh
-    sudo apt-get install curl
-    curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-    sudo apt-get install nodejs git sqlite3 -y
-    sudo npm install -g npm
-   ```
-
-3. Clone source code của bot bằng cách nhập vào terminal
-   ```sh
-    git clone https://github.com/ElainaPr0ject/Elaina.git
-   ```
-
-5. Cài đặt các package cần thiết
-    1. Mở cmd/terminal ở thư mục bot, LƯU Ý thư mục đó phải có file package.json
-    2. Nhập
-   ```sh
-    npm install
-   ```
-
-7. Chỉnh sửa file config
-    1. Mở file .env bằng 1 Text Editor
-    2. Tùy chỉnh BOTNAME, PREFIX, API_KEY, ...
-    3. Sao lưu và đóng lại
-
-8. Lấy appstate
-    - Bạn có thể lấy fbstate bằng [c3c-fbstate](https://github.com/c3cbot/c3c-fbstate), nhưng cần đổi tên lại thành appstate.json
-    
-9. Chạy bot và tận hưởng
-    1. Nhập:
-       1. Đối với Java
-          Xem hướng dẫn tại đây
-       3. Đối với Nodejs
-          npm start
-          hoặc
-          node .
-    2. Đợi source code load file và tận hưởng!
-
-#### Video hướng dẫn cài đặt
-
-1. Windows: [Comming Soon...]()
-2. Linux: [Comming Soon...]()
-3. Android: [Comming Soon...]()
-
+6. Run bot and enjoy
+    1. Run app.exe then enter 1
+       or
+       Enter on terminal:
+       ```sh
+       node .
+       ```
+    2. Wait for the source code to load the file and enjoy!
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Hy vọng các bạn sẽ thích Project này và hãy fork nó về
-Điều này sẽ là 1 động lực to lớn để mình có thể phát triển nó
+Hope you guys enjoy this project and fork it.
+This will be a great motivation for me to develop it.
 
 <!-- LICENSE -->
 ## License
